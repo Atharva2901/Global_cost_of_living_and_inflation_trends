@@ -79,8 +79,8 @@ Developing economies have weaker income buffers, so small inflation rises cause 
 **Cluster 1:** Emerging markets → moderate prices, stable growth, moderate inflation.  
 **Cluster 2:** Advanced economies (Switzerland, Singapore, Norway) → high prices, very high income, strong purchasing power.
 
-![Global Map](visuals/elbow_silhoutte_snaps/elbow_method.jpg)
-![Global Map](visuals/elbow_silhoutte_snaps/silhoutte_scores.jpg)
+![Global Map](visuals\elbow_silhoutte_snaps\elbow_method.jpg)
+![Global Map](visuals\elbow_silhoutte_snaps\silhoutte_scores.jpg)
 ---
 
 ##  Key Insights & Discussion
@@ -91,7 +91,7 @@ Developing economies have weaker income buffers, so small inflation rises cause 
 - **Purchasing Power Gap:** Affordability divide between developed and developing economies is widening.  
 - **Global Stability Zones:** Western Europe, North America, and Gulf countries remain stable; South Asia & Africa are vulnerable.
 - 
-**![Global Map](visuals/tableau_screenshots/Gobal_clusters_map.jpg)**
+**![Global Map](visuals\tableau_screenshots\Gobal_clusters_map.jpg)**
 ---
 
 ##  Conclusion & Recommendations
