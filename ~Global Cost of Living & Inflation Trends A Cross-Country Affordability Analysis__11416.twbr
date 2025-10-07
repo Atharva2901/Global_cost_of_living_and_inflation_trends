@@ -1,0 +1,1203 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20243.25.0114.1153                               -->
+<workbook original-version='18.1' source-build='2024.3.3 (20243.25.0114.1153)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MapboxVectorStylesAndLayers />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+  </document-format-change-manifest>
+  <repository-location id='GlobalCostofLivingInflationTrendsACross-CountryAffordabilityAnalysis' path='/workbooks' revision='1.0' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='global_cost_of_living_merged' inline='true' name='federated.17oshhn19dtwzm121ua5k0kmo3u4' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='global_cost_of_living_merged' name='textscan.1pz885x0rmsbvu16y4uv01sxt6ty'>
+            <connection class='textscan' directory='C:/Users/Hp/Downloads' filename='global_cost_of_living_merged.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1pz885x0rmsbvu16y4uv01sxt6ty' name='global_cost_of_living_merged.csv' table='[global_cost_of_living_merged#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='Country' ordinal='0' />
+            <column datatype='real' name='Cost_of_Living_Index' ordinal='1' />
+            <column datatype='real' name='Rent_Index' ordinal='2' />
+            <column datatype='real' name='Groceries_Index' ordinal='3' />
+            <column datatype='real' name='Restaurant_Price_Index' ordinal='4' />
+            <column datatype='real' name='Local_Purchasing_Power_Index' ordinal='5' />
+            <column datatype='integer' name='year' ordinal='6' />
+            <column datatype='real' name='GDP_per_capita_PPP' ordinal='7' />
+            <column datatype='real' name='Inflation_percent' ordinal='8' />
+            <column datatype='real' name='CPI_index' ordinal='9' />
+            <column datatype='real' name='Affordability_Ratio' ordinal='10' />
+            <column datatype='real' name='Cluster' ordinal='11' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[global_cost_of_living_merged.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Country</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Country]</local-name>
+            <parent-name>[global_cost_of_living_merged.csv]</parent-name>
+            <remote-alias>Country</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[global_cost_of_living_merged.csv_97E1EA888DB74A27B0B47E0E4DA63EA2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Cost_of_Living_Index</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Cost_of_Living_Index]</local-name>
+            <parent-name>[global_cost_of_living_merged.csv]</parent-name>
+            <remote-alias>Cost_of_Living_Index</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[global_cost_of_living_merged.csv_97E1EA888DB74A27B0B47E0E4DA63EA2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Rent_Index</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Rent_Index]</local-name>
+            <parent-name>[global_cost_of_living_merged.csv]</parent-name>
+            <remote-alias>Rent_Index</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[global_cost_of_living_merged.csv_97E1EA888DB74A27B0B47E0E4DA63EA2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Groceries_Index</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Groceries_Index]</local-name>
+            <parent-name>[global_cost_of_living_merged.csv]</parent-name>
+            <remote-alias>Groceries_Index</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[global_cost_of_living_merged.csv_97E1EA888DB74A27B0B47E0E4DA63EA2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Restaurant_Price_Index</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Restaurant_Price_Index]</local-name>
+            <parent-name>[global_cost_of_living_merged.csv]</parent-name>
+            <remote-alias>Restaurant_Price_Index</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[global_cost_of_living_merged.csv_97E1EA888DB74A27B0B47E0E4DA63EA2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Local_Purchasing_Power_Index</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Local_Purchasing_Power_Index]</local-name>
+            <parent-name>[global_cost_of_living_merged.csv]</parent-name>
+            <remote-alias>Local_Purchasing_Power_Index</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[global_cost_of_living_merged.csv_97E1EA888DB74A27B0B47E0E4DA63EA2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[year]</local-name>
+            <parent-name>[global_cost_of_living_merged.csv]</parent-name>
+            <remote-alias>year</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[global_cost_of_living_merged.csv_97E1EA888DB74A27B0B47E0E4DA63EA2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GDP_per_capita_PPP</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[GDP_per_capita_PPP]</local-name>
+            <parent-name>[global_cost_of_living_merged.csv]</parent-name>
+            <remote-alias>GDP_per_capita_PPP</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[global_cost_of_living_merged.csv_97E1EA888DB74A27B0B47E0E4DA63EA2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Inflation_percent</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Inflation_percent]</local-name>
+            <parent-name>[global_cost_of_living_merged.csv]</parent-name>
+            <remote-alias>Inflation_percent</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[global_cost_of_living_merged.csv_97E1EA888DB74A27B0B47E0E4DA63EA2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CPI_index</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[CPI_index]</local-name>
+            <parent-name>[global_cost_of_living_merged.csv]</parent-name>
+            <remote-alias>CPI_index</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[global_cost_of_living_merged.csv_97E1EA888DB74A27B0B47E0E4DA63EA2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Affordability_Ratio</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Affordability_Ratio]</local-name>
+            <parent-name>[global_cost_of_living_merged.csv]</parent-name>
+            <remote-alias>Affordability_Ratio</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[global_cost_of_living_merged.csv_97E1EA888DB74A27B0B47E0E4DA63EA2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Cluster</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Cluster]</local-name>
+            <parent-name>[global_cost_of_living_merged.csv]</parent-name>
+            <remote-alias>Cluster</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[global_cost_of_living_merged.csv_97E1EA888DB74A27B0B47E0E4DA63EA2]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Affordability Ratio' datatype='real' name='[Affordability_Ratio]' role='measure' type='quantitative' />
+      <column caption='CPI index' datatype='real' name='[CPI_index]' role='measure' type='quantitative' />
+      <column caption='Cost of Living Index' datatype='real' name='[Cost_of_Living_Index]' role='measure' type='quantitative' />
+      <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='GDP per capita PPP' datatype='real' name='[GDP_per_capita_PPP]' role='measure' type='quantitative' />
+      <column caption='Groceries Index' datatype='real' name='[Groceries_Index]' role='measure' type='quantitative' />
+      <column caption='Inflation percent' datatype='real' name='[Inflation_percent]' role='measure' type='quantitative' />
+      <column caption='Local Purchasing Power Index' datatype='real' name='[Local_Purchasing_Power_Index]' role='measure' type='quantitative' />
+      <column caption='Rent Index' datatype='real' name='[Rent_Index]' role='measure' type='quantitative' />
+      <column caption='Restaurant Price Index' datatype='real' name='[Restaurant_Price_Index]' role='measure' type='quantitative' />
+      <column caption='global_cost_of_living_merged.csv' datatype='table' name='[__tableau_internal_object_id__].[global_cost_of_living_merged.csv_97E1EA888DB74A27B0B47E0E4DA63EA2]' role='measure' type='quantitative' />
+      <column caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='Data/TableauTemp/#TableauTemp_0uioq8q096m3vk17kmzjx02pqpkb.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='10/06/2025 12:08:43 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Country</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Country]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Country</remote-alias>
+              <ordinal>0</ordinal>
+              <family>global_cost_of_living_merged.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>100</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[global_cost_of_living_merged.csv_97E1EA888DB74A27B0B47E0E4DA63EA2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Cost_of_Living_Index</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Cost_of_Living_Index]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Cost_of_Living_Index</remote-alias>
+              <ordinal>1</ordinal>
+              <family>global_cost_of_living_merged.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>92</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[global_cost_of_living_merged.csv_97E1EA888DB74A27B0B47E0E4DA63EA2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Rent_Index</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Rent_Index]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Rent_Index</remote-alias>
+              <ordinal>2</ordinal>
+              <family>global_cost_of_living_merged.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>84</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[global_cost_of_living_merged.csv_97E1EA888DB74A27B0B47E0E4DA63EA2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Groceries_Index</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Groceries_Index]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Groceries_Index</remote-alias>
+              <ordinal>3</ordinal>
+              <family>global_cost_of_living_merged.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>90</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[global_cost_of_living_merged.csv_97E1EA888DB74A27B0B47E0E4DA63EA2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Restaurant_Price_Index</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Restaurant_Price_Index]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Restaurant_Price_Index</remote-alias>
+              <ordinal>4</ordinal>
+              <family>global_cost_of_living_merged.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>93</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[global_cost_of_living_merged.csv_97E1EA888DB74A27B0B47E0E4DA63EA2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Local_Purchasing_Power_Index</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Local_Purchasing_Power_Index]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Local_Purchasing_Power_Index</remote-alias>
+              <ordinal>5</ordinal>
+              <family>global_cost_of_living_merged.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>98</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[global_cost_of_living_merged.csv_97E1EA888DB74A27B0B47E0E4DA63EA2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>year</remote-alias>
+              <ordinal>6</ordinal>
+              <family>global_cost_of_living_merged.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[global_cost_of_living_merged.csv_97E1EA888DB74A27B0B47E0E4DA63EA2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>GDP_per_capita_PPP</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[GDP_per_capita_PPP]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>GDP_per_capita_PPP</remote-alias>
+              <ordinal>7</ordinal>
+              <family>global_cost_of_living_merged.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>100</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[global_cost_of_living_merged.csv_97E1EA888DB74A27B0B47E0E4DA63EA2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Inflation_percent</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Inflation_percent]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Inflation_percent</remote-alias>
+              <ordinal>8</ordinal>
+              <family>global_cost_of_living_merged.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>93</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[global_cost_of_living_merged.csv_97E1EA888DB74A27B0B47E0E4DA63EA2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CPI_index</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[CPI_index]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>CPI_index</remote-alias>
+              <ordinal>9</ordinal>
+              <family>global_cost_of_living_merged.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>93</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[global_cost_of_living_merged.csv_97E1EA888DB74A27B0B47E0E4DA63EA2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Affordability_Ratio</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Affordability_Ratio]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Affordability_Ratio</remote-alias>
+              <ordinal>10</ordinal>
+              <family>global_cost_of_living_merged.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>100</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[global_cost_of_living_merged.csv_97E1EA888DB74A27B0B47E0E4DA63EA2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Cluster</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Cluster]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Cluster</remote-alias>
+              <ordinal>11</ordinal>
+              <family>global_cost_of_living_merged.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[global_cost_of_living_merged.csv_97E1EA888DB74A27B0B47E0E4DA63EA2]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='global_cost_of_living_merged.csv' id='global_cost_of_living_merged.csv_97E1EA888DB74A27B0B47E0E4DA63EA2'>
+            <properties context=''>
+              <relation connection='textscan.1pz885x0rmsbvu16y4uv01sxt6ty' name='global_cost_of_living_merged.csv' table='[global_cost_of_living_merged#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='Country' ordinal='0' />
+                  <column datatype='real' name='Cost_of_Living_Index' ordinal='1' />
+                  <column datatype='real' name='Rent_Index' ordinal='2' />
+                  <column datatype='real' name='Groceries_Index' ordinal='3' />
+                  <column datatype='real' name='Restaurant_Price_Index' ordinal='4' />
+                  <column datatype='real' name='Local_Purchasing_Power_Index' ordinal='5' />
+                  <column datatype='integer' name='year' ordinal='6' />
+                  <column datatype='real' name='GDP_per_capita_PPP' ordinal='7' />
+                  <column datatype='real' name='Inflation_percent' ordinal='8' />
+                  <column datatype='real' name='CPI_index' ordinal='9' />
+                  <column datatype='real' name='Affordability_Ratio' ordinal='10' />
+                  <column datatype='real' name='Cluster' ordinal='11' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='Affordability Ranking'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='global_cost_of_living_merged' name='federated.17oshhn19dtwzm121ua5k0kmo3u4' />
+          </datasources>
+          <datasource-dependencies datasource='federated.17oshhn19dtwzm121ua5k0kmo3u4'>
+            <column caption='Affordability Ratio' datatype='real' name='[Affordability_Ratio]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Cluster]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Affordability_Ratio]' derivation='Sum' name='[sum:Affordability_Ratio:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Cluster]' derivation='Sum' name='[sum:Cluster:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.17oshhn19dtwzm121ua5k0kmo3u4].[none:Country:nk]' direction='ASC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.17oshhn19dtwzm121ua5k0kmo3u4].[sum:Affordability_Ratio:qk]' shelf='rows' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.17oshhn19dtwzm121ua5k0kmo3u4].[sum:Cluster:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.17oshhn19dtwzm121ua5k0kmo3u4].[none:Country:nk]</rows>
+        <cols>[federated.17oshhn19dtwzm121ua5k0kmo3u4].[sum:Affordability_Ratio:qk]</cols>
+      </table>
+      <simple-id uuid='{81123E30-E3F7-4DB6-AC41-A7CFC591A5A2}' />
+    </worksheet>
+    <worksheet name='GDP vs Cost of Living'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='global_cost_of_living_merged' name='federated.17oshhn19dtwzm121ua5k0kmo3u4' />
+          </datasources>
+          <datasource-dependencies datasource='federated.17oshhn19dtwzm121ua5k0kmo3u4'>
+            <column caption='Affordability Ratio' datatype='real' name='[Affordability_Ratio]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Cluster]' role='measure' type='quantitative' />
+            <column caption='Cost of Living Index' datatype='real' name='[Cost_of_Living_Index]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column caption='GDP per capita PPP' datatype='real' name='[GDP_per_capita_PPP]' role='measure' type='quantitative' />
+            <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Affordability_Ratio]' derivation='Sum' name='[sum:Affordability_Ratio:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Cluster]' derivation='Sum' name='[sum:Cluster:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Cost_of_Living_Index]' derivation='Sum' name='[sum:Cost_of_Living_Index:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[GDP_per_capita_PPP]' derivation='Sum' name='[sum:GDP_per_capita_PPP:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.17oshhn19dtwzm121ua5k0kmo3u4].[sum:Cluster:qk]' type='custom-interpolated'>
+              <color-palette custom='true' name='' type='ordered-sequential'>
+                <color>#f1f1f1</color>
+                <color>#f2dada</color>
+                <color>#f3c3c3</color>
+                <color>#f5abab</color>
+                <color>#f69393</color>
+                <color>#f87c7c</color>
+                <color>#f96363</color>
+                <color>#fa4b4b</color>
+                <color>#fc3232</color>
+                <color>#fd1919</color>
+                <color>#ff0000</color>
+              </color-palette>
+            </encoding>
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.17oshhn19dtwzm121ua5k0kmo3u4].[sum:Cluster:qk]' />
+              <size column='[federated.17oshhn19dtwzm121ua5k0kmo3u4].[none:Country:nk]' />
+              <tooltip column='[federated.17oshhn19dtwzm121ua5k0kmo3u4].[sum:Affordability_Ratio:qk]' />
+            </encodings>
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+          </pane>
+        </panes>
+        <rows>[federated.17oshhn19dtwzm121ua5k0kmo3u4].[sum:GDP_per_capita_PPP:qk]</rows>
+        <cols>[federated.17oshhn19dtwzm121ua5k0kmo3u4].[sum:Cost_of_Living_Index:qk]</cols>
+      </table>
+      <simple-id uuid='{6532A0CF-4A0B-4470-B4E2-0A3CAFCC07AE}' />
+    </worksheet>
+    <worksheet name='Global Clusters Map'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='global_cost_of_living_merged' name='federated.17oshhn19dtwzm121ua5k0kmo3u4' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.17oshhn19dtwzm121ua5k0kmo3u4'>
+            <column datatype='real' name='[Cluster]' role='measure' type='quantitative' />
+            <column caption='Cost of Living Index' datatype='real' name='[Cost_of_Living_Index]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column caption='GDP per capita PPP' datatype='real' name='[GDP_per_capita_PPP]' role='measure' type='quantitative' />
+            <column caption='Inflation percent' datatype='real' name='[Inflation_percent]' role='measure' type='quantitative' />
+            <column-instance column='[Country]' derivation='Attribute' name='[attr:Country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Cluster]' derivation='Sum' name='[sum:Cluster:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Cost_of_Living_Index]' derivation='Sum' name='[sum:Cost_of_Living_Index:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[GDP_per_capita_PPP]' derivation='Sum' name='[sum:GDP_per_capita_PPP:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Inflation_percent]' derivation='Sum' name='[sum:Inflation_percent:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.17oshhn19dtwzm121ua5k0kmo3u4].[Longitude (generated)]' field-type='quantitative' max='65615589.869054027' min='22331445.598653402' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.17oshhn19dtwzm121ua5k0kmo3u4].[Latitude (generated)]' field-type='quantitative' max='1159378.6142827608' min='-25452935.149125643' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.17oshhn19dtwzm121ua5k0kmo3u4].[sum:Cluster:qk]' type='custom-interpolated'>
+              <color-palette custom='true' name='' type='ordered-sequential'>
+                <color>#f1f1f1</color>
+                <color>#f2dada</color>
+                <color>#f3c3c3</color>
+                <color>#f5abab</color>
+                <color>#f69393</color>
+                <color>#f87c7c</color>
+                <color>#f96363</color>
+                <color>#fa4b4b</color>
+                <color>#fc3232</color>
+                <color>#fd1919</color>
+                <color>#ff0000</color>
+              </color-palette>
+            </encoding>
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='band-size' scope='rows' value='5' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.17oshhn19dtwzm121ua5k0kmo3u4].[sum:Cluster:qk]' />
+              <lod column='[federated.17oshhn19dtwzm121ua5k0kmo3u4].[none:Country:nk]' />
+              <tooltip column='[federated.17oshhn19dtwzm121ua5k0kmo3u4].[sum:Cost_of_Living_Index:qk]' />
+              <tooltip column='[federated.17oshhn19dtwzm121ua5k0kmo3u4].[attr:Country:nk]' />
+              <tooltip column='[federated.17oshhn19dtwzm121ua5k0kmo3u4].[sum:GDP_per_capita_PPP:qk]' />
+              <tooltip column='[federated.17oshhn19dtwzm121ua5k0kmo3u4].[sum:Inflation_percent:qk]' />
+              <geometry column='[federated.17oshhn19dtwzm121ua5k0kmo3u4].[Geometry (generated)]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.17oshhn19dtwzm121ua5k0kmo3u4].[Latitude (generated)]</rows>
+        <cols>[federated.17oshhn19dtwzm121ua5k0kmo3u4].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{A5068FAA-AEBA-4447-A8B4-D0A0F7557D28}' />
+    </worksheet>
+    <worksheet name='Inflation vs Cost of Living'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='global_cost_of_living_merged' name='federated.17oshhn19dtwzm121ua5k0kmo3u4' />
+          </datasources>
+          <datasource-dependencies datasource='federated.17oshhn19dtwzm121ua5k0kmo3u4'>
+            <column datatype='real' name='[Cluster]' role='measure' type='quantitative' />
+            <column caption='Cost of Living Index' datatype='real' name='[Cost_of_Living_Index]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column caption='Inflation percent' datatype='real' name='[Inflation_percent]' role='measure' type='quantitative' />
+            <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Cluster]' derivation='Sum' name='[sum:Cluster:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Cost_of_Living_Index]' derivation='Sum' name='[sum:Cost_of_Living_Index:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Inflation_percent]' derivation='Sum' name='[sum:Inflation_percent:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.17oshhn19dtwzm121ua5k0kmo3u4].[sum:Cluster:qk]' />
+              <size column='[federated.17oshhn19dtwzm121ua5k0kmo3u4].[none:Country:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.17oshhn19dtwzm121ua5k0kmo3u4].[sum:Inflation_percent:qk]</rows>
+        <cols>[federated.17oshhn19dtwzm121ua5k0kmo3u4].[sum:Cost_of_Living_Index:qk]</cols>
+      </table>
+      <simple-id uuid='{BC706DC8-87C9-4C1D-B3E5-CE8AD75448DE}' />
+    </worksheet>
+    <worksheet name='Sheet 5'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{B6FCA562-4A47-486D-B8E2-B364FC3AC722}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size maxheight='860' maxwidth='1300' minheight='800' minwidth='1300' sizing-mode='range' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='7' param='horz' type-v2='layout-flow' w='98770' x='615' y='1000'>
+            <zone h='98000' id='5' type-v2='layout-basic' w='86462' x='615' y='1000'>
+              <zone h='49000' id='3' name='Global Clusters Map' w='43231' x='615' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='49000' id='9' name='GDP vs Cost of Living' w='43231' x='43846' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='49000' id='11' name='Inflation vs Cost of Living' w='43231' x='615' y='50000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='49000' id='12' name='Affordability Ranking' w='43231' x='43846' y='50000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='160' h='98000' id='6' is-fixed='true' param='vert' type-v2='layout-flow' w='12308' x='87077' y='1000'>
+              <zone h='8125' id='8' name='Global Clusters Map' pane-specification-id='0' param='[federated.17oshhn19dtwzm121ua5k0kmo3u4].[sum:Cluster:qk]' type-v2='color' w='12308' x='87077' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='89875' id='10' name='GDP vs Cost of Living' pane-specification-id='4' param='[federated.17oshhn19dtwzm121ua5k0kmo3u4].[none:Country:nk]' type-v2='size' w='12308' x='87077' y='9125'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1300' minheight='1300' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='16' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='15' param='vert' type-v2='layout-flow' w='98770' x='615' y='1000'>
+                <zone fixed-size='280' h='49000' id='3' is-fixed='true' name='Global Clusters Map' w='43231' x='615' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='8125' id='8' name='Global Clusters Map' pane-specification-id='0' param='[federated.17oshhn19dtwzm121ua5k0kmo3u4].[sum:Cluster:qk]' type-v2='color' w='12308' x='87077' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49000' id='9' is-fixed='true' name='GDP vs Cost of Living' w='43231' x='43846' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='89875' id='10' name='GDP vs Cost of Living' pane-specification-id='4' param='[federated.17oshhn19dtwzm121ua5k0kmo3u4].[none:Country:nk]' type-v2='size' w='12308' x='87077' y='9125'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49000' id='11' is-fixed='true' name='Inflation vs Cost of Living' w='43231' x='615' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49000' id='12' is-fixed='true' name='Affordability Ranking' w='43231' x='43846' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{4A248099-8F3C-44A5-AFF5-702EA4D329AE}' />
+    </dashboard>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 2'>
+      <style />
+      <size maxheight='860' maxwidth='1300' minheight='800' minwidth='1300' sizing-mode='range' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='63750' id='3' is-scaled='1' param='Image/Cost-of-living-by-country (1).jpg' type-v2='bitmap' w='73923' x='7615' y='5000' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='8' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='7' param='vert' type-v2='layout-flow' w='98770' x='615' y='1000'>
+                <zone fixed-size='280' h='63750' id='3' is-fixed='true' is-scaled='1' param='Image/Cost-of-living-by-country (1).jpg' type-v2='bitmap' w='73923' x='7615' y='5000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{5F357BB9-9EB6-4685-9298-01FE8BD5C29B}' />
+    </dashboard>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 3'>
+      <style />
+      <size maxheight='860' maxwidth='800' minheight='800' minwidth='800' sizing-mode='range' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='30625' id='3' is-centered='0' is-scaled='1' param='Image/Data_s1.JPG' type-v2='bitmap' w='89875' x='3875' y='14000' />
+        <zone h='55179' id='5' is-centered='0' is-scaled='1' param='Image/Data_s2.JPG' type-v2='bitmap' w='95231' x='3077' y='52143' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='9' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='8' param='vert' type-v2='layout-flow' w='98000' x='1000' y='1000'>
+                <zone fixed-size='264' h='30625' id='3' is-centered='0' is-fixed='true' is-scaled='1' param='Image/Data_s1.JPG' type-v2='bitmap' w='89875' x='3875' y='14000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='55179' id='5' is-centered='0' is-fixed='true' is-scaled='1' param='Image/Data_s2.JPG' type-v2='bitmap' w='95231' x='3077' y='52143'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{96BC81DC-7D2F-41E7-824D-91491F80E0AD}' />
+    </dashboard>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 4'>
+      <style />
+      <size maxheight='860' maxwidth='800' minheight='500' minwidth='800' sizing-mode='range' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='97106' id='3' is-scaled='1' param='Image/Gemini_Generated_Image_1jzi311jzi311jzi.png' type-v2='bitmap' w='98000' x='1000' y='1447'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='8' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97106' id='7' param='vert' type-v2='layout-flow' w='98000' x='1000' y='1447'>
+                <zone fixed-size='280' h='97106' id='3' is-fixed='true' is-scaled='1' param='Image/Gemini_Generated_Image_1jzi311jzi311jzi.png' type-v2='bitmap' w='98000' x='1000' y='1447'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{5EBCCFBB-24E3-47E8-973E-70F8A68045EB}' />
+    </dashboard>
+    <dashboard name='Story 1' type='storyboard'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#000000' fontname='Segoe UI'>Global Cost of Living &amp; Inflation Trends</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style>
+        <style-rule element='story-point-caption'>
+          <format attr='width' value='928' />
+        </style-rule>
+      </style>
+      <size maxheight='964' maxwidth='1016' minheight='964' minwidth='1016' />
+      <zones>
+        <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98340' id='1' param='vert' removable='false' type-v2='layout-flow' w='98426' x='787' y='830'>
+            <zone h='3320' id='3' type-v2='title' w='98426' x='787' y='830' />
+            <zone fixed-size='160' h='16598' id='4' is-fixed='true' paired-zone-id='5' removable='false' type-v2='flipboard-nav' w='98426' x='787' y='4150' />
+            <zone h='78422' id='5' paired-zone-id='4' removable='false' type-v2='flipboard' w='98426' x='787' y='20748'>
+              <flipboard active-id='8' nav-type='caption' show-nav-arrows='true'>
+                <story-points>
+                  <story-point captured-sheet='Dashboard 2' id='1' />
+                  <story-point caption='Understanding Global Economic Pressures (2010–2024)&#10;Over the last decade, countries have faced rising living costs and inflation shocks that reshaped affordability across the world. This study explores how cost of living, income, and inflation interact globally, identifying which nations remain affordable, which are expensive, and which face volatile economic conditions.' captured-sheet='Dashboard 3' id='2' />
+                  <story-point caption='Global Cost of Living Clusters&#10;Countries are grouped into three clusters based on cost, income, and inflation patterns.&#10;Affordable: lower cost, moderate inflation, lower income(Dark red)&#10;Expensive: high cost, high income, stable inflation(Light red)&#10;Volatile: moderate cost, high inflation swings(white)&#10;This map highlights regional patterns - stable high-income nations contrast with volatile emerging economies experiencing rapid inflation.' captured-sheet='Global Clusters Map' id='3' />
+                  <story-point caption='GDP vs Cost of Living: The Affordability Connection                                                                                                                                                                                                       How Income Influences Living Costs&#10;This scatter plot shows that while higher GDP countries tend to have higher living costs, affordability depends on the income-to-cost ratio, not GDP alone.&#10;Several emerging economies (India, Egypt, Vietnam) maintain low living costs relative to income, indicating stronger purchasing power compared to expensive economies like Switzerland or Singapore.' captured-sheet='GDP vs Cost of Living' id='5' />
+                  <story-point caption='Inflation vs Cost of Living: The Pressure Point                                                                                                                                                                                                                       Does Inflation Always Raise Living Costs?&#10;Not necessarily. While inflation strongly impacts volatile economies, its effect is muted in developed nations.&#10;Countries like Argentina and Venezuela experience sharp cost increases alongside high inflation, whereas Germany and Japan show stable costs under moderate inflation rates.' captured-sheet='Inflation vs Cost of Living' id='6' />
+                  <story-point caption='Affordability Ranking: Global Comparison&#10;Which Countries Are Truly Affordable?&#10;This ranking uses the Affordability Ratio (Cost ÷ GDP) to measure purchasing power.&#10;Top affordable economies include India, Pakistan, and Nigeria, where costs remain low relative to income.&#10;Least affordable economies - Switzerland, Singapore, and Iceland, show the highest living expenses despite strong GDP levels.' captured-sheet='Affordability Ranking' id='7' />
+                  <story-point caption='Key Findings &amp; Global Implications:&#10;Expensive economies maintain high costs but remain stable due to strong incomes and low inflation.&#10;Affordable countries provide better purchasing power but are sensitive to inflation and income shocks.&#10;Volatile economies (e.g., Pakistan, Nigeria) face persistent inflation-pressure cycles.&#10;If inflation continues to rise globally, middle-income economies are most at risk of cost instability.&#10;Policy efforts should focus on balancing income growth with inflation control to maintain global affordability.' captured-sheet='Dashboard 1' id='8' />
+                  <story-point caption='Project Summary: Global Cost of Living &amp; Inflation Trends' captured-sheet='Dashboard 4' id='9' />
+                </story-points>
+              </flipboard>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone flipboard-zone-id='5' forceUpdate='true' h='13485' hidden='true' id='6' story-point-id='1' type-v2='text' w='92717' x='3937' y='5290'>
+          <formatted-text>
+            <run bold='true' fontcolor='#000000' fontname='Segoe UI' fontsize='16'>Global Cost of Living &amp; Inflation Trends</run>
+          </formatted-text>
+        </zone>
+        <zone flipboard-zone-id='5' h='8091' hidden='true' id='7' story-point-id='2' type-v2='text' w='92520' x='3937' y='13797'>
+          <formatted-text>
+            <run fontalignment='0' fontcolor='#000000' fontname='Segoe UI'>Data sources: Numbeo (Cost of Living Index 2024), World Bank (GDP per capita PPP, CPI, Inflation %)</run>
+          </formatted-text>
+        </zone>
+        <zone flipboard-zone-id='5' forceUpdate='true' h='6743' hidden='true' id='8' story-point-id='5' type-v2='text' w='68209' x='8071' y='16183'>
+          <formatted-text>
+            <run fontalignment='0' fontcolor='#000000' fontname='Segoe UI'> High-income nations show high costs but stable inflation. Affordable economies (green) maintain balance despite lower GDP.</run>
+          </formatted-text>
+        </zone>
+        <zone flipboard-zone-id='5' h='8091' hidden='true' id='9' story-point-id='6' type-v2='text' w='33268' x='40748' y='22303'>
+          <formatted-text>
+            <run fontalignment='0' fontcolor='#000000' fontname='Segoe UI'>High inflation (≥10%) aligns with significant cost surges in developing economies.</run>
+          </formatted-text>
+        </zone>
+        <zone flipboard-zone-id='5' forceUpdate='true' h='12344' hidden='true' id='10' story-point-id='9' type-v2='text' w='71654' x='4331' y='22303'>
+          <formatted-text>
+            <run fontalignment='0' fontcolor='#000000' fontname='Segoe UI'>This project integrates real-world datasets (Numbeo &amp; World Bank) and applies clustering, affordability modeling, and visual storytelling.</run>
+            <run fontalignment='0'>Æ&#10;</run>
+            <run fontalignment='0' fontcolor='#000000' fontname='Segoe UI'>It demonstrates how data-driven insights can reveal underlying </run>
+            <run bold='true' fontalignment='0' fontcolor='#000000' fontname='Segoe UI'>economic inequalities and resilience patterns</run>
+            <run fontalignment='0' fontcolor='#000000' fontname='Segoe UI'> across nations.</run>
+          </formatted-text>
+        </zone>
+      </zones>
+      <simple-id uuid='{FF9B4262-C903-4458-9DD9-23BFDCE338A6}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Global Clusters Map'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.17oshhn19dtwzm121ua5k0kmo3u4].[sum:Cluster:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{C1F0C808-D0B9-484B-ADD3-8510105D3AD2}' />
+    </window>
+    <window class='worksheet' name='GDP vs Cost of Living'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='4' param='[federated.17oshhn19dtwzm121ua5k0kmo3u4].[none:Country:nk]' type='size' />
+            <card pane-specification-id='4' param='[federated.17oshhn19dtwzm121ua5k0kmo3u4].[sum:Cluster:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{EE7A272C-9C2A-4241-BB99-88F8723081D6}' />
+    </window>
+    <window class='worksheet' name='Inflation vs Cost of Living'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='2' param='[federated.17oshhn19dtwzm121ua5k0kmo3u4].[sum:Cluster:qk]' type='color' />
+            <card pane-specification-id='2' param='[federated.17oshhn19dtwzm121ua5k0kmo3u4].[none:Country:nk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{FF6B5E26-425D-4D5C-89F2-6A04407CD278}' />
+    </window>
+    <window class='worksheet' name='Affordability Ranking'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.17oshhn19dtwzm121ua5k0kmo3u4].[sum:Cluster:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{2613B4BC-FD17-4316-8639-04F710F225EB}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Affordability Ranking' />
+        <viewpoint name='GDP vs Cost of Living'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Global Clusters Map'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Inflation vs Cost of Living'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='3' />
+      <simple-id uuid='{DB340A0D-025E-40FB-945D-EBC9C0DFEC00}' />
+    </window>
+    <window class='dashboard' name='Story 1'>
+      <viewpoints />
+      <active id='-1' />
+      <simple-id uuid='{FDDA2B77-1E60-4148-9FBB-B9D10897E823}' />
+    </window>
+    <window class='worksheet' name='Sheet 5'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{A63B9D4C-D9D5-469A-9FD9-196C3E9525CC}' />
+    </window>
+    <window class='dashboard' name='Dashboard 2'>
+      <viewpoints />
+      <active id='3' />
+      <simple-id uuid='{55B3E020-6879-4579-A297-823785CB9745}' />
+    </window>
+    <window class='dashboard' name='Dashboard 3'>
+      <viewpoints />
+      <active id='5' />
+      <simple-id uuid='{EC809438-D2FC-458C-9EB2-6BEE59664403}' />
+    </window>
+    <window class='dashboard' name='Dashboard 4'>
+      <viewpoints />
+      <active id='3' />
+      <simple-id uuid='{D56855E3-922F-4FC3-9BF5-2C65386CB5D1}' />
+    </window>
+  </windows>
+</workbook>
